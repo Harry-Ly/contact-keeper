@@ -12,7 +12,7 @@ app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
 
-// Port that app.listen() can liste on
+// Port that app.listen() can listen on
 // This line looks for an environment variable called PORT or 5000
 const PORT = process.env.PORT || 5000;
 
