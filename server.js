@@ -1,7 +1,10 @@
 const express = require("express");
-
+const connectDB = require("./config/db");
 // Initializes express in a variable called app
 const app = express();
+
+// Connect Database
+connectDB();
 
 app.get("/", (req, res) =>
   res.json({ msg: "Welcome to the ContactKepper API..." })
